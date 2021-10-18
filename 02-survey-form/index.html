@@ -1,0 +1,64 @@
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> -->
+<script>
+function smallAlert() {
+ return alert("Thank You!");}
+</script>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+  <h1 id="title">Local Store Survey Form</h1>
+  <p id="description">Thank you for taking part in our survey</p>
+
+  <form id="survey-form" action="" onsubmit="smallAlert()" >
+    <div class="group-form"> 
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" name="name" required>
+
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your e-mail" name="email" required>
+      
+
+<label for="number" id="number-label">Age</label>
+      <input id="number" type="number" placeholder="Age" name="number" required min="13" max="100">
+
+   <label  id="dropdown-label" for="dropdown">How would you rate our customer service?</label>
+      <select id="dropdown" name="dropdown">
+        <option value="first-item">Bad</option>
+        <option value="second-item">So-So</option>   
+        <option value="third-item">Good</option>
+        <option value="forth-item">Excelent</option>  
+      </select>
+
+    <label id="radio-label">Have you visited our shop lately?</label>
+      <label for="yes">
+        <input id="option-one" value="yes" type="radio" name="yes-no">Yes
+        <label><br>
+
+          <label for="no">
+            <input id="option-two" value="no" type="radio" name="yes-no">No
+          </label>
+           
+<label id="checkbox-label">Have you bought any of the following products from us?<span class="small">(Check all that apply)</span></label>
+<label ><input class="group-items" type="checkbox" value="one" name="options">Milk and diary products</label><br>
+<label> <input class="group-items" type="checkbox" value="two" name="options">Fresh fruits and vegetables<br>
+<label> <input class="group-items" type="checkbox" value="three" name="options">Meat and fish<br>
+<label> <input class="group-items" type="checkbox" value="four" name="options">Bread and other bakery products<br>
+<label> <input class="group-items" type="checkbox" value="five" name="options">Drinks
+</label>
+
+
+<p>Write something to us so we can improve our costumer service:</p>
+  <textarea placeholder="Enter your comments here..."></textarea>
+
+
+<button id="submit" type="submit" value="Submit" btn btn-primary btn-lg btn-block>Submit</button>
+</div>
+</form>
+</body>
